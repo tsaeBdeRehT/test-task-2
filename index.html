@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <link type="text/css" rel="stylesheet" href="./index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
 </head>
 <body>
 <div class="app">
   <header>
-    <div class="logo">
+    <div class="logo desktop">
       <img src="./assets/logo_welbex.svg" alt="logo" class="logo__image"/>
       <p class="logo__subtitle">
         крупный интегратор CRM в Росcии и ещё 8 странах
@@ -19,9 +20,9 @@
       <a class="nav-link">Виджеты</a>
       <a class="nav-link">Интеграции</a>
       <a class="nav-link">Кейсы</a>
-      <a class="nav-link">Сертификаты</a>
+      <a class="nav-link desktop">Сертификаты</a>
     </div>
-    <div class="contacts">
+    <div class="contacts desktop">
       <span class="contacts__number">+7 555 555-55-55</span>
       <div class="contacts-icons">
         <img src="./assets/icon-telegram.svg" class="contacts-icons__icon" alt="Telegram"/>
@@ -42,25 +43,39 @@
       <h2 class="project-content__title">
           Вместе с <b class="color-text">бесплатной консультацией</b> мы дарим:
       </h2>
-      <div class="presents">
-        <div class="present-cell">
+      <ul class="presents mobile">
+        <li class="present-cell">
+          <div class="present-cell__title">Skype Аудит</div>
+        </li>
+        <li class="present-cell">
+          <div class="present-cell__title">30 виджетов</div>
+        </li>
+        <li class="present-cell">
+          <div class="present-cell__title">Dashboard</div>
+        </li>
+        <li class="present-cell">
+          <div class="present-cell__title">Месяц аmoCRM</div>
+        </li>
+      </ul>
+      <ul class="presents desktop">
+        <li class="present-cell">
           <div class="present-cell__title">Виджеты</div>
           <div class="present-cell__subtitle">30 готовых решений</div>
-        </div>
-        <div class="present-cell">
+        </li>
+        <li class="present-cell">
           <div class="present-cell__title">Dashboard</div>
           <div class="present-cell__subtitle">с показателями вашего бизнеса</div>
-        </div>
-        <div class="present-cell">
+        </li>
+        <li class="present-cell">
           <div class="present-cell__title">Skype Аудит</div>
           <div class="present-cell__subtitle">отдела продаж и CRM системы</div>
-        </div>
-        <div class="present-cell">
+        </li>
+        <li class="present-cell">
           <div class="present-cell__title">35 дней</div>
           <div class="present-cell__subtitle">использования CRM</div>
-        </div>
-      </div>
-      <button class="button">Получить консультацию</button>
+        </li>
+      </ul>
+      <button class="button desktop">Получить консультацию</button>
     </div>
   </main>
   <footer>
@@ -81,8 +96,9 @@
             <li class="list-item">Виджеты</li>
             <li class="list-item">Интеграции</li>
             <li class="list-item">Наши клиенты</li>
+            <li class="list-item mobile">Благодарность клиентов</li>
             <li class="list-item">Кейсы</li>
-            <li class="list-item">Благодарственные письма</li>
+            <li class="list-item desktop">Благодарственные письма</li>
             <li class="list-item">Сертификаты</li>
             <li class="list-item">Блог на Youtube</li>
             <li class="list-item">Вопрос / Ответ</li>

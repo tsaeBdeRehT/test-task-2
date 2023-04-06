@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #0E1014;
+    background: left url("./assets/red light.png") no-repeat, #0E1014;
     font-family: Inter, sans-serif;
     color: #E4E5EA;
 }
@@ -19,10 +19,16 @@ footer {
     padding-bottom: 1.25rem;
 }
 
+
 .app {
     width: 1140px;
     margin: auto;
     padding-top: 2.875rem;
+    background:
+    top url("./assets/purple light.png") no-repeat,
+    44.875rem 0 url("./assets/purple ball.png") no-repeat,
+    23.0635rem 5.1875rem url("./assets/red ball.png") no-repeat,
+    43.9375rem 34.1875rem url("./assets/red ball (1).png") no-repeat;
 }
 
 header {
@@ -133,6 +139,8 @@ header {
     gap: 1.875rem 1.6rem;
     margin-top: 2.5rem;
     margin-bottom: 3.8125rem;
+    padding-left: 0;
+    list-style-type: none;
 }
 
 .present-cell {
@@ -228,4 +236,168 @@ header {
 
 .rights a {
     text-decoration: underline;
+}
+
+.mobile {
+    display: none;
+}
+
+
+@media (max-width: 770px) {
+    .mobile {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    body {
+        background:  100% 3.4375rem url("./assets/mobile/purple light.png") no-repeat,
+        0 3.5rem url("./assets/mobile/red light.png") no-repeat,
+        100% 3.5rem url("./assets/mobile/purple ball.png") no-repeat,
+        #0E1014;
+    }
+
+    header {
+        justify-content: center;
+        padding-bottom: 1.25rem;
+    }
+
+    main {
+        padding-top: 2.5rem;
+        padding-bottom: 3.75rem;
+        display: block;
+        background: 35% 100% url("./assets/red ball (1).png") no-repeat;
+    }
+
+    footer {
+        padding-top: 2.5rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .app {
+        background: none;
+        width: 288px;
+        padding: 1.25rem 1rem;
+    }
+
+    .nav-bar {
+        padding: 0;
+        justify-content: space-between;
+        gap: 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+
+    .nav-link {
+        letter-spacing: 0;
+    }
+
+    .project-promo__title {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+    }
+
+    .project-promo__subtitle {
+        margin-top: .9375rem;
+        margin-bottom: 0;
+    }
+
+    .project-content {
+        align-items: flex-start;
+    }
+
+    .project-content__title {
+        margin-top: 2.8125rem;
+        text-align: left;
+        width: auto;
+    }
+
+    .project-content__title .color-text {
+        font-weight: 700;
+        letter-spacing: 0.05rem;
+        text-transform: none;
+    }
+
+    .presents {
+        margin-top: 1.25rem;
+        gap: .9375rem .625rem;
+        margin-bottom: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .present-cell__title {
+        font-size: .8125rem;
+        margin-bottom: 0;
+        line-height: 1rem;
+    }
+
+    .present-cell {
+        min-width: 6.125rem;
+        width: auto;
+        background-image: url("./assets/Line 9.svg");
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        padding-left: .9375rem;
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    .list {
+        gap: .625rem .3rem;
+        height: 8.875rem;
+        align-items: flex-start;
+    }
+
+    .list-header {
+        font-size: .75rem;
+    }
+
+    .list-item {
+        font-size: .875rem;
+        line-height: 1.0625rem;
+        letter-spacing: 0;
+    }
+
+    .about .list {
+        height: auto;
+    }
+
+    .menu .list .list-item {
+        width: 6.6rem;
+    }
+
+    .footer-contacts {
+        text-align: left;
+    }
+
+    .footer-contacts .list {
+        gap: .625rem;
+        height: auto;
+    }
+
+    .footer-contacts .list .list-item:first-child {
+        font-size: 1rem;
+    }
+
+    .contacts-icons__icon {
+        width: 1.5rem;
+    }
+
+    .rights {
+        text-align: left;
+        margin-top: 3.5rem;
+    }
+
 }
