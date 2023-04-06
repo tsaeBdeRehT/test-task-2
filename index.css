@@ -60,6 +60,33 @@ header {
 .nav-link {
     font-weight: 500;
     letter-spacing: 0.05rem;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 2.1rem;
+    width: 0;
+    height: 0.125rem;
+    background-color: #E4E5EA;
+    transition: width 0.5s;
+}
+
+.nav-link:hover:after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 2.1rem;
+    height: 0.125rem;
+    background-color: #E4E5EA;
+    transition: width 0.5s;
 }
 
 .contacts {
@@ -72,12 +99,17 @@ header {
 .contacts__number {
     line-height: 1.1875rem;
     letter-spacing: 0.07rem;
+    cursor: pointer;
 }
 
 .contacts-icons {
     display: flex;
     gap: 1.875rem;
     align-items: flex-start;
+}
+
+.contacts-icons__icon {
+    cursor: pointer;
 }
 
 .project-promo__title {
@@ -172,6 +204,8 @@ header {
     letter-spacing: 0.05rem;
     color: #E4E5EA;
 }
+
+
 
 .footer-content {
     display: flex;
@@ -297,6 +331,7 @@ header {
 
     .project-promo__title {
         font-size: 2.25rem;
+        width: auto;
         line-height: 2.75rem;
     }
 
