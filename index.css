@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
-body {
+.app {
     margin: 0;
     padding: 0;
     background: left url("./assets/red light.png") no-repeat, #0E1014;
     font-family: Inter, sans-serif;
     color: #E4E5EA;
+}
+
+.app-content {
+    width: 1140px;
+    margin: auto;
+    padding-top: 2.875rem;
+    background:
+            top url("./assets/purple light.png") no-repeat,
+            44.875rem 0 url("./assets/purple ball.png") no-repeat,
+            23.0635rem 5.1875rem url("./assets/red ball.png") no-repeat,
+            43.9375rem 34.1875rem url("./assets/red ball (1).png") no-repeat;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
@@ -20,21 +36,6 @@ footer {
 }
 
 
-.app {
-    width: 1140px;
-    margin: auto;
-    padding-top: 2.875rem;
-    background:
-    top url("./assets/purple light.png") no-repeat,
-    44.875rem 0 url("./assets/purple ball.png") no-repeat,
-    23.0635rem 5.1875rem url("./assets/red ball.png") no-repeat,
-    43.9375rem 34.1875rem url("./assets/red ball (1).png") no-repeat;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-}
 
 .logo {
     padding-top: .6875rem;
@@ -284,14 +285,14 @@ header {
 
     }
 
-    body {
+    .app {
         background:  100% 3.4375rem url("./assets/mobile/purple light.png") no-repeat,
         0 3.5rem url("./assets/mobile/red light.png") no-repeat,
         100% 3.5rem url("./assets/mobile/purple ball.png") no-repeat,
         #0E1014;
     }
 
-    header {
+    .app-header {
         justify-content: center;
         padding-bottom: 1.25rem;
     }
@@ -311,7 +312,7 @@ header {
         display: none;
     }
 
-    .app {
+    .app-content {
         background: none;
         width: 288px;
         padding: 1.25rem 1rem;
